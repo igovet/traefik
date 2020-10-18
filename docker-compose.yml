@@ -15,4 +15,4 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     labels:
-      - "traefik.http.middlewares.test-auth.basicauth.users=admin:$apr1$rg8us0hm$qnjxCpOQ1HXIJlaSuJEt8."
+      - "traefik.http.middlewares.test-auth.basicauth.users=admin:$$apr1$$rg8us0hm$$qnjxCpOQ1HXIJlaSuJEt8."
