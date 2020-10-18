@@ -1,0 +1,58 @@
+# yii console command
+/yii
+
+# phpstorm project files
+.idea
+
+# all log files
+*.log
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# upload dir
+/app/upload
+/app/17_files
+/app/18_files
+!.htaccess
+
+!dist
+
+# tmp dir
+/app/bitrix/tmp/*
+/app/bitrix/managed_cache
+/app/bitrix/stack_cache
+
+# bitrix config
+/app/bitrix/.settings.php
+/app/bitrix/php_interface/dbconn.php
+
+# docker
+/docker/docker/env/dev/XDEBUG_CONFIG.env
+/docker/.env
+
+/app/vendor
+mail.out
+
+/certs
+
+.env
