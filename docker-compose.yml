@@ -18,10 +18,5 @@ services:
       - "80:80"
       - "8080:8080"
       - "443:443"
-    networks:
-      - traefik
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
-networks:
-  traefik:
-    external: true
