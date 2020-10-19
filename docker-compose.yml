@@ -7,7 +7,7 @@ services:
       #- "--log.level=DEBUG"
       - "--api.insecure=true"
       - "--providers.docker=true"
-      - "--providers.docker.network=traefik"
+      - "--providers.docker.network=traefik_default"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
@@ -19,10 +19,6 @@ services:
       - "8080:8080"
       - "443:443"
     networks:
-      - traefik
+      - traefik_default
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
-networks:
-  traefik:
-    driver: bridge
-    external: true
