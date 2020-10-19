@@ -11,11 +11,9 @@ services:
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
-      - "--certificatesresolvers.le.acme.httpchallenge=true"
-      - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=web"
       - "--certificatesresolvers.le.acme.email=ceo@igorvetrov.ru"
       - "--certificatesresolvers.le.acme.storage=/acme.json"
-#      - "--certificatesresolvers.le.acme.tlschallenge=true"
+      - "--certificatesresolvers.le.acme.tlschallenge=true"
     ports:
       - "80:80"
       - "443:443"
