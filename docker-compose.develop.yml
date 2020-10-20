@@ -24,7 +24,5 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     labels:
       - "traefik.enable=true"
-      - "traefik.docker.network=traefik_default"
-      - "traefik.http.routers.traefik.entrypoints=web"
       - "traefik.http.routers.traefik.middlewares=auth"
       - "traefik.http.middlewares.auth.basicauth.users=develop:$$apr1$$gwZJm2hL$$gWV929aBvrRoqWij8fHpd0"
