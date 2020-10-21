@@ -26,6 +26,6 @@ services:
       - "traefik.http.routers.traefik.entrypoints=web"
       - "traefik.http.routers.traefik.service=api@internal"
       - "traefik.http.routers.traefik.rule=Host(`traefik.dev.igorvetrov.ru`)"
-      - "traefik.http.routers.traefik.middlewares=auth"
-      - "traefik.http.middlewares.auth.basicauth.users=admin:$$apr1$$64ei8cpk$$WbGuuTaJW9VXuyI8Rvq6U1"
+      - "traefik.http.routers.traefik.middlewares=auth-traefik"
+      - "traefik.http.middlewares.auth-traefik.basicauth.users=admin:$$apr1$$64ei8cpk$$WbGuuTaJW9VXuyI8Rvq6U1"
     restart: "always"
