@@ -10,6 +10,8 @@ services:
       - "--providers.docker.network=traefik_default"
       - "--providers.docker.exposedbydefault=false"
       - "--pilot.token=${PILOT_TOKEN}"
+      - "--experimental.plugins.plugin-simplecache.modulename=github.com/traefik/plugin-simplecache"
+      - "--experimental.plugins.plugin-simplecache.version=v0.2.1"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
       - "--certificatesresolvers.le.acme.email=ceo@igorvetrov.ru"
